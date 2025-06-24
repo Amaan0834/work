@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/b743698bcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Amaan Abid</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------about---- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="us.pmg.jpeg" class="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="ama">Hi, I'm Amaan Abid, a B.Tech student specializing in Computer Science. I'm passionate about technology, coding, and building innovative solutions. Currently, I'm exploring areas like web development, data structures, and emerging technologies to strengthen my skills and prepare for a successful career in tech.</p><br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>   
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>10th from Lucknow Public School</li>
+                        <li><span>2022</span><br>12th from Lucknow Public School</li>
+                        <li><span>2022-2026</span><br>B.Tech from G.L.Bajaj</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------services- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repellendus reprehenderit quos, facere enim laudantium tempora ab maxime molestiae facilis animi quis iure ex magnam qui voluptatum, vitae nihil eum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repellendus reprehenderit quos, facere enim laudantium tempora ab maxime molestiae facilis animi quis iure ex magnam qui voluptatum, vitae nihil eum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repellendus reprehenderit quos, facere enim laudantium tempora ab maxime molestiae facilis animi quis iure ex magnam qui voluptatum, vitae nihil eum.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+<!-- ------------------portfolio--- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" >
+                <div class="layer">
+                    <h3>Social media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Donwload it from play store.
+                    </p>
+                    <a href="https://www.reddit.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" >
+                <div class="layer">
+                    <h3>Music  App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Donwload it from play store.
+                    </p>
+                    <a href="https://open.spotify.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Donwload it from play store.
+                    </p>
+                    <a href="https://www.myntra.com/?utm_source=dms_google&utm_medium=dms_searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK_New&gad_source=1&gad_campaignid=20443628324&gbraid=0AAAAADoxBh7MiEVuahrNh6eO1k1PIInaR&gclid=CjwKCAjwmenCBhA4EiwAtVjzmlMkYrD1wCUGCt-41UJARuCjyBHIzVswtdq3L24PPMKCYXO8JN8DexoCGvIQAvD_BwE" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!-- --------------------------contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>amaankhan080304@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>6392537078</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1DpuQ5Gm5U/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Amaan0834" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/amaannnnn._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/amaan-abid-498032367/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="mycv.pdf" target="_blank" class="btn btn2">Open CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Amaan. Made With <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzn6w__wFkNHerLp8V2XSILuBVqL80Rsi-qk6Y6_gFiCldgmSFO8_bM03zEwRwXbkiyw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message  Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
